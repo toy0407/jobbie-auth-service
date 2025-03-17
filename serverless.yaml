@@ -1,0 +1,28 @@
+service: jobbie-auth-service
+frameworkVersion: "4"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: dev
+  region: us-east-1
+  environment:
+    DATABASE_URL: ${env:DATABASE_URL}
+    JWT_SECRET: ${env:JWT_SECRET}
+
+plugins:
+  - serverless-offline
+
+functions:
+  signup:
+    handler: src/handlers/signup.handler
+    events:
+      - http:
+          path: /auth/signup
+          method: post
+  login:
+    handler: src/handlers/login.handler
+    events:
+      - http:
+          path: /auth/login
+          method: post
