@@ -9,6 +9,8 @@ provider:
   environment:
     DATABASE_URL: ${env:DATABASE_URL}
     JWT_SECRET: ${env:JWT_SECRET}
+    SERVICE_NAME: ${env:SERVICE_NAME}
+    NODE_ENV: ${env:NODE_ENV}
 
 plugins:
   - serverless-offline

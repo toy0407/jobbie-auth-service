@@ -16,5 +16,9 @@
     "serverless": "^4.9.0",
     "serverless-offline": "^14.4.0",
     "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.6.0",
+    "@toy0407/jobbie-lib": "^0.2.20"
   }
 }
