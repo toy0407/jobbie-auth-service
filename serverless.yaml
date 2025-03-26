@@ -17,14 +17,8 @@ plugins:
 
 functions:
   signup:
-    handler: src/handlers/signup.handler
+    handler: src/handlers/request-otp.handler
     events:
       - http:
-          path: /auth/signup
-          method: post
-  login:
-    handler: src/handlers/login.handler
-    events:
-      - http:
-          path: /auth/login
+          path: /auth/otp/request
           method: post

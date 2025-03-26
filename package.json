@@ -18,6 +18,7 @@
     "typescript": "^5.8.2"
   },
   "dependencies": {
-    "@toy0407/jobbie-lib": "^0.2.31"
+    "@toy0407/jobbie-lib": "^0.2.37",
+    "zod": "^3.24.2"
   }
 }
